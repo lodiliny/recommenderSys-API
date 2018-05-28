@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommender System API</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='esthetics.css') }}">
+</head>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <p></p>
+        <h1>Recommender System for Learning</h1>
+    </div>
+<body>
+    <p><br></p>
+    <p> Welcome to the research study on receommendation of textual materials for learning, and thanks for your participation! </p>
+    <ul style="list-style-type:none">
+    <p> <li>In this study, you would be presented with a 3 essay like questions. However, you are not expected to provide a write up for
+    the questions. Rather you would be expected to put together highlights from the materials
+    you have read or are reading that would be adequate to answer the questions.</li></p>
+    <p><li> To answer each of the questions, we would provide you 5 links to articles. As you read the articles, please create highlights on portions of the articles being read that shows your interest. And based on the highlights you create, the recmmender system would provide a list of recommended articles that are reflective of your interests (based on your highlights), for further reading and to complete the questions. </li></p>
+    <p><li> To receieve recommendations, click on the <b> Request Recommendation </b> button.</li></p>
+    <p><li> To complete each of the essay like questions, using the essay tool, drag and drop highlights you have created that are relevant to answer each question.</li></p>
+    <p> </p>
+    <p><li> To begin the study, click on the <b> Start </b> button below. You may choose to pull out of the study at any time without
+    giving a reason and without any negative impact to your grades and education. </li></p>
+        <p><br><br> <br></p>
+    <div class="start" style="padding-left:2px">
+        <button type="button" id="start" onclick="window.location.href='{{url_for('research_study1')}}';"> <h3>Start Study Questions</h3> </button>
+    </div>
+    </ul>
+</body>
+</html>

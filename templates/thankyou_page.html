@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Study Completed!</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='esthetics.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <p></p>
+        <h1>Recommender System for Learning: Study Complete</h1>
+    </div>
+    <p><br></p>
+    <ul style="...">
+        <p><h3>Thank you for partcipating in and completing the study!</h3></p>
+        <p><h3>Please click on the button below to complete the feedback questionnaire.</h3></p>
+        <p><br><br> <br></p>
+        <div class="start" style="padding-left:2px">
+        <button type="button" id="Next" onclick="window.location.href='{{url_for('completed')}}';"> <h3>Continue to the Feedback Questionnaire</h3> </button>
+        </div>
+    </ul>
+</body>
+</html>

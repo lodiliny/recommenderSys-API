@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nStudy Recommendations</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='keywordStyle.css') }}">
+</head>
+<p>
+<div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <h1>Recommender System for Learning</h1>
+</div>
+<table border = 0>
+    <tr> <th> <h3> RECOMMENDATION LIST </h3> </th> </tr>
+    {% for row_index in range(output['title']|count) %}
+        {% set val = output['url'][row_index] %}
+        <tr> <td> <a href={{val}}> {{ output['title'][row_index] }} </a>
+            <br> <font size="3" color="green"> {{ output['url'][row_index] }} </font></br>
+            <font size="3"> {{ output['snippet'][row_index] }} </font>  </td>
+            <p></p> </tr>
+    {% endfor %}
+</table>
+
+<ul class="border">
+    <h4> Keywords from Highlights</h4>
+    {% for entry in output['keyword'] %}
+        <li class="bullet"> {{entry}}
+    {% endfor %}
+</ul>
+
+</body>
+</html>

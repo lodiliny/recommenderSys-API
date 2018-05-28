@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RecSys API: Research Study, Q2</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='esthetics.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <p></p>
+        <h1>Recommender System for Learning: Research Study Questions</h1>
+    </div>
+    <p></p><p></p>
+    <p>Please read the following articles. Remember to create highlights for recommendation.</p>
+    <p>To provide answers to the question, upon reading the articles below and creating relevant highlights, using the essay tool, drag and drop appropriate hiighlights from the ones you created suitable to answer the question.</p>
+    <p>Before proceeding to the next question, please remember to use the essay tool to provide your answers to the question.</p>
+    <ul style="list-style-type:none">
+        <p><br><li><h3>Question 2: Provide highlights that suggest the issues regarding the cost and environmental implication of the Massey Tunnel replacement project.</h3></li></p>
+        <ol type="1">
+            <li><a href="http://preprod.journalofcommerce.com/Projects/News/2017/4/BCs-Massey-tunnel-replacement-project-officially-begins-1023236W">BC’s Massey tunnel replacement project officially begins </a></li><br>
+            <li><a href="http://www.news1130.com/2017/02/20/ndp-question-massey-tunnel-replacement/">BC NDP questions Massey Tunnel replacement project </a></li><br>
+            <li><a href="http://www.delta-optimist.com/opinion/letters/get-global-experts-to-review-tunnel-1.21366364">Get global experts to review Tunnel</a></li><br>
+            <li><a href="http://www.delta-optimist.com/news/delta-mayor-has-hope-for-bridge-1.21724940">Delta mayor has hope for bridge</a></li><br>
+            <li><a href="http://www.cbc.ca/news/canada/british-columbia/bridge-george-massey-tunnel-protest-1.4057172">Protesters crash groundbreaking for bridge to replace Massey Tunnel</a></li>
+            <p><br><br> <br></p>
+        </ol>
+        <div class="start" style="padding-left:2px">
+        <button type="button" id="Next" onclick="window.location.href='{{url_for('research_study3')}}';"> <h3>Proceed to Question 3</h3> </button>
+        </div>
+    </ul>
+</body>
+</html>

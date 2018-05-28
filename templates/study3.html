@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RecSys API: Research Study, Q3</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='esthetics.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <p></p>
+        <h1>Recommender System for Learning: Research Study Questions</h1>
+    </div>
+    <p></p><p></p>
+    <p>Please read the following articles. Remember to create highlights for recommendation.</p>
+    <p>To provide answers to the question, upon reading the articles below and creating relevant highlights, using the essay tool, drag and drop appropriate hiighlights from the ones you created suitable to answer the question.</p>
+    <p>Before proceeding to the next question, please remember to use the essay tool to provide your answers to the question.</p>
+    <ul style="list-style-type:none">
+        <p><li><h3>Question 3: Provide highlights that mention the differing opinions about the proposed Massey Tunnel replacement project.</h3></li></p>
+        <ol type="1">
+            <li><a href="https://www.theglobeandmail.com/news/british-columbia/bc-ndp-would-side-with-mayors-on-massey-tunnel-replacement-project/article34341811">BC NDP would side with mayors on Massey Tunnel replacement project </a></li><br>
+            <li><a href="https://www.straight.com/news/942006/metro-vancouver-ask-bc-ndp-government-about-status-bridge-replacement-george-massey">Metro Vancouver to ask BC NDP government about status of bridge replacement for George Massey Tunnel</a> </li><br>
+            <li><a href="https://engage.gov.bc.ca/masseytunnel/why/">Why is the Project Needed?</a> </li><br>
+            <li><a href="http://vancouversun.com/opinion/opinion-bridge-is-best-replacement-for-massey-tunnel">Bridge is best replacement for Massey Tunnel</a> </li><br>
+            <li><a href="http://www.metrovancouver.org/media-room/media-releases/regional-planning/445/Metro%20Vancouver%20Releases%20Impact%20Assessment%20of%20George%20Massey%20Tunnel%20Replacement%20Project">Analysis of George Massey Tunnel Replacement Project</a></li>
+        </ol>
+        <p><br><br> <br></p>
+    <div class="start" style="padding-left:2px">
+        <button type="button" id="start" onclick="window.location.href='{{url_for('thank_you')}}';"> <h3>Next</h3> </button>
+    </div>
+    </ul>
+
+</body>
+</html>

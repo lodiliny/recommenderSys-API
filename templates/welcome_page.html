@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommender System API</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='esthetics.css') }}">
+</head>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo-sfu.png') }}" />
+        <p></p>
+        <h1>Recommender System for Learning</h1>
+    </div>
+<body>
+    <p><br></p>
+    <ul style="...">
+        <p> Welcome to the research study on receommendation of textual materials for learning, and thanks for your participation! </p>
+        <p>Before commencing the study, please click on the button below to complete the demographic questionniare.</p>
+        <p><br><br> <br></p>
+    <div class="start" style="padding-left:2px">
+        <button type="button" id="start" onclick="window.location.href='{{url_for('demographics')}}';"> <h3>Continue to demographics questionnaire</h3> </button>
+    </div>
+    </ul>
+</body>
+</html>
